@@ -5,8 +5,15 @@ html{
     color: white;
 }
 
-#links {
+.links {
     display:block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
 }
 
+.links:hover {
+    color: gold;
+    text-decoration: underline;
+}
 
