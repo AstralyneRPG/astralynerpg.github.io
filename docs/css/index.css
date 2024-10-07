@@ -5,3 +5,10 @@ html{
     color: white;
 }
 
+.overlay{
+    position: absolute;
+    z-index: 1;
+    height: auto;
+    opacity: 0.5;
+}
+
