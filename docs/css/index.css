@@ -1,5 +1,6 @@
 html{
-    background: linear-gradient(rgb(162, 25, 25),black);
+    background-color: rgb(162, 25, 25);
     text-align: center;
     font-family: "Lucida Console", monospace;
 }
+
