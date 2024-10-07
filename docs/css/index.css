@@ -18,7 +18,7 @@ html{
   }
 
   .links:hover {
-    color: gold;
+    color: rgba(146, 54, 54, 1);
     text-decoration: underline;
 }
 
