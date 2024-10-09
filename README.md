@@ -8,6 +8,6 @@ After becoming a DM for my first dnd game, the idea to do so was strong, and so 
 Google Docs to get my ideas around, but I then realized it was a bit difficult for me to share it in a way that was convenient for my players.
 
 Eventually, I began learning how to code in HTML, CSS, and JavaScript. I had learned a bit of it in High School, but after taking a
-Web Dev course in University, it gave me the push to begin trying to make a website for it.
+Web Dev course in University, it gave me the push to begin trying to make a website for it. And so here we are!
 
-And here we are
+This is mainly meant to be for friends, but if you stumble across this then, hello o/
