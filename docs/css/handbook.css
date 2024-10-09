@@ -3,32 +3,32 @@ html{
     text-align: left;
     font-family: "Lucida Console", monospace;
     color: white;
-    padding-left: 111px;
+    padding-left: 7.34%;
 }
 
 h1{
-    margin-left: 22px;
+    margin-left: 1%;
 }
 
 h2{
-    margin-left: 35px;
+    margin-left: 2%;
 }
 
 .bg{
-    width: 1390px;
-    height: 1000px;
+    width: 90%;
+    height: 300%;
     background-color: white;
     position: absolute;
-    margin-left: 1px;
-    margin-top: 1px;
+    margin-left: .04%;
+    margin-top: 0.06%;
 }
 
 .menu{
-    width: 120px;
-    height: 120px;
+    width: 7.9%;
+    height: 17.3%;
     background-color: #161616;
     position: absolute;
 
-    top: 0px;
-    left: 0px;
+    top: 0%;
+    left: 0%;
 }
