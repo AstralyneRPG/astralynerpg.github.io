@@ -3,37 +3,61 @@ html{
     text-align: left;
     font-family: "Lucida Console", monospace;
     color: white;
-    padding-left: 7.34%;
+    padding-left: 7vw;
 }
 
 h1{
-    margin-left: 1%;
+    margin-left: 1.5vw;
 }
 
 h2{
-    margin-left: 2%;
+    margin-left: 2vw;
+}
+
+h3{
+    color:rgb(0, 0, 0);
+    margin-left: 2vw;
+    font-size: 6vh;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .bg{
-    width: 90%;
-    height: 300%;
+    width: 88vw;
+    height: max-content;
     background-color: white;
     position: absolute;
-    margin-left: .04%;
-    margin-top: 0.06%;
+    margin-left: .38vw;
+    margin-top: 0.389vh;
+    z-index: 1;
 }
 
 .menu{
-    width: 7.9%;
-    height: 17.3%;
+    width: 7.9vw;
+    height: 7.9vw;
     background-color: #161616;
     position: absolute;
-
-    top: 0%;
-    left: 0%;
+    top: 0vh;
+    left: 0vw;
+    z-index: 3;
 }
 
-.bg, .menu, h1, h2, html{
-    display: flex;
-    flex-wrap: wrap;
+.links {
+    color: rgba(146, 54, 54, 1);;
+    font-size: 6vh;
+    max-width: max-content;
+    margin-left: 3vw;
+    margin: 4vh;
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .links:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
 }
