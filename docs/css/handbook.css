@@ -3,4 +3,32 @@ html{
     text-align: left;
     font-family: "Lucida Console", monospace;
     color: white;
+    padding-left: 111px;
+}
+
+h1{
+    margin-left: 22px;
+}
+
+h2{
+    margin-left: 35px;
+}
+
+.bg{
+    width: 1390px;
+    height: 1000px;
+    background-color: white;
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.menu{
+    width: 120px;
+    height: 120px;
+    background-color: #161616;
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
 }
