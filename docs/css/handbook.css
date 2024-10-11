@@ -6,6 +6,9 @@ html{
     padding-left: 7vw;
 }
 
+@media (min-width: 1000px) {
+    
+
 h1{
     margin-left: 1.5vw;
 }
@@ -52,6 +55,12 @@ h3{
     cursor: pointer;
     z-index: 2;
   }
+}
+
+@media (max-width: 1000px) {
+
+
+}
 
   .links:hover {
     color: rgb(0, 0, 0);
