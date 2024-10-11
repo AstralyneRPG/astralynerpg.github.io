@@ -3,5 +3,20 @@ html{
     text-align: left;
     font-family: "Lucida Console", monospace;
     color: white;
-    padding-left: 7vw;
+    margin-left: 7vw;
+    margin-right: 3vw;
+    margin-top: 4vh;
+}
+
+h1{
+    font-size: 4vh;
+}
+
+h2{
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+p{
+    font-size: 2.3vh;
 }
