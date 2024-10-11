@@ -7,36 +7,39 @@ html{
 }
 
 h1{
-    margin-left: 1.5vw;
+    margin-left: 2vw;
+    font-size: 6vh;
 }
 
 h2{
-    margin-left: 2vw;
+    margin-left: 2.3vw;
+    font-size: 3.5vh;
+    margin-top: -3vh;
 }
 
 h3{
     color:rgb(0, 0, 0);
     margin-left: 2vw;
-    font-size: 6vh;
+    font-size: 4.5vh;
     text-decoration: underline;
     font-weight: bold;
+    margin-top: 4vh;
 }
 
 .bg{
-    width: 88vw;
+    width: max-content;
     height: max-content;
     background-color: white;
+    padding-right: 2vw;
     position: absolute;
-    margin-left: .38vw;
-    margin-top: 0.389vh;
     z-index: 1;
 }
 
 .menu{
-    width: 7.9vw;
-    height: 7.9vw;
+    width: 8vw;
+    height: 101%;
     background-color: #161616;
-    position: absolute;
+    position: fixed;
     top: 0vh;
     left: 0vw;
     z-index: 3;
@@ -44,10 +47,10 @@ h3{
 
 .links {
     color: rgba(146, 54, 54, 1);;
-    font-size: 6vh;
+    font-size: 5vh;
     max-width: max-content;
     margin-left: 3vw;
-    margin: 4vh;
+    margin-bottom: 2vh;
     display: block;
     cursor: pointer;
     z-index: 2;
