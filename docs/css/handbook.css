@@ -1,45 +1,49 @@
 html{
     background-color: rgba(146, 54, 54, 1);
-    text-align: left;
     font-family: "Lucida Console", monospace;
     color: white;
     padding-left: 7vw;
 }
 
-@media (min-width: 1000px) {
-    
+@media (max-width: 1000px){
 
 h1{
     margin-left: 1.5vw;
+    margin-top: 2vh;
+    font-size: 5vh;
 }
 
 h2{
+    margin-top: -1.7vh;
     margin-left: 2vw;
+    font-size: 3vh;
 }
 
 h3{
     color:rgb(0, 0, 0);
     margin-left: 2vw;
-    font-size: 6vh;
+    font-size: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
     text-decoration: underline;
     font-weight: bold;
 }
 
 .bg{
-    width: 88vw;
+    width: 80vw;
     height: max-content;
     background-color: white;
-    position: absolute;
-    margin-left: .38vw;
-    margin-top: 0.389vh;
+    padding-top: 1vh;
+    margin-left:.2vw;
+    padding-bottom: 1vh;
     z-index: 1;
 }
 
 .menu{
-    width: 7.9vw;
-    height: 7.9vw;
+    width: 8vw;
+    height: 100vh;
     background-color: #161616;
-    position: absolute;
+    position: fixed;
     top: 0vh;
     left: 0vw;
     z-index: 3;
@@ -47,21 +51,22 @@ h3{
 
 .links {
     color: rgba(146, 54, 54, 1);;
-    font-size: 6vh;
+    font-size: 5vh;
     max-width: max-content;
-    margin-left: 3vw;
-    margin: 4vh;
+    margin-left: 4vw;
+    margin-bottom: 1vh;
     display: block;
     cursor: pointer;
     z-index: 2;
+    border: none;
+    border-radius: 14px;
   }
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px){
 
 
 }
-
   .links:hover {
     color: rgb(0, 0, 0);
     text-decoration: underline;
