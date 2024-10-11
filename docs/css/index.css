@@ -3,6 +3,11 @@ html{
     text-align: center;
     font-family: "Lucida Console", monospace;
     color: white;
+    margin: 4vw;
+}
+
+h1{
+    font-size: 6vh;
 }
 
 p {
