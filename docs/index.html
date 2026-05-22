@@ -5,7 +5,7 @@
 
 <head>
     <title>Astralyne: Working Title</title>
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/docs/css/index.css">
     <link rel="icon" type="image/png" href="/images/d20.png">
 
     <meta property="og:type" content="website">
@@ -18,18 +18,18 @@
 </head>
 
 <body>
-    <h1>Welcome to the Astralyne Wiki and Handbook!</h1>
-    <p>This website will house all documents relating to the setting of Astralyne, using a DnD 5.5e based ruleset.</p>
-    <p>Use the sidebar to navigate. (🦀 Under Construction Currently 🦀).</p>
-
+    <div id="overlay"></div>
     <aside id="sidebar">
         <div class="sidebar-header">
         <h2>Astralyne</h2>
-        <p>A DND 5.5e Setting</p>
+        <p>Use this handy Navigation bar to explore!</p>
     </div>
 
      <div class="sidebar">
+      <nav class="sidebar-nav"> 
       <a href="/docs/" class="active"><span class="icon">🏠</span>Home</a>
+      </nav>   
+      
       </div>
 
     <div class="sidebar">
@@ -37,7 +37,7 @@
         <nav class="sidebar-nav">
       <a href="/docs/astralyne/classes.html"><span class="icon">⚔️</span> Classes &amp; Subclasses</a>
       <a href="/docs/astralyne/species.html"><span class="icon">🧬</span> Playable Species</a>
-      <a href="/docs/astralyne/spelllists.html"><span class="icon">🔮</span> Spell Lists</a>
+      <a href="/docs/astralyne/spells.html"><span class="icon">🔮</span> Spell Lists</a>
         </nav>
     </div>
 
@@ -46,7 +46,7 @@
         <nav class="sidebar-nav">
       <a href="/docs/astralyne/lorehistory.html"><span class="icon">📖</span>World History</a>
       <a href="/docs/astralyne/factions.html"><span class="icon">👥</span>Factions</a>
-      <a href="/docs/astralyne/species.html"><span class="icon">🗺️</span>World Map</a>
+      <a href="/docs/astralyne/worldmap.html"><span class="icon">🗺️</span>World Map</a>
         </nav>
     </div>
 
@@ -56,8 +56,70 @@
     </aside>
 
 
+<header id="topbar">
+  <button id="menu-btn" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="topbar-title">Astral<span>yne</span></div>
+</header>
 
 
+<main id="main">
 
+  <div class="wikimain">
+    <h1>Welcome to the Astralyne Homepage!</h1>
+    <p>This wiki houses all documents, lore, rules, and references for the Astralyne campaign setting.</p>
+    <span class="submain">🦀 Under Construction 🦀</span>
+  </div>
+
+
+  <div class="card-grid">
+    <a class="card" href="/astralyne/lorehistory.html">
+      <span class="card-icon">📖</span>
+      <div class="card-title">Lore and History</div>
+      <div class="card-desc">Want to understand the world of Astralyne? Start here.</div>
+    </a>
+  </div>
+
+  <div class="wiki-section">
+    <h2>About This Wiki</h2>
+    <p>
+     Astralyne is a random passion project of mine and this is my attempt at organizing my ideas in one place.
+     Main reason its a website is so friends can take a look and observe at how far it's going and my goal is to
+     one day run a campaign in this setting. Feel free to observe and have fun round here.
+    </p>
+  </div>
+
+</main>
+
+<script>
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+  const menuBtn = document.getElementById('menu-btn');
+
+  function openSidebar() {
+    sidebar.classList.add('open');
+    overlay.classList.add('active');
+    menuBtn.classList.add('open');
+  }
+  function closeSidebar() {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('active');
+    menuBtn.classList.remove('open');
+  }
+
+  menuBtn.addEventListener('click', () => {
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  document.querySelectorAll('.sidebar-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth < 900) closeSidebar();
+      document.querySelectorAll('.sidebar-nav a').forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+</script>
 </body>
 </html>
