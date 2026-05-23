@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, inital-scale=1">
+
+<head>
+    <title>Astralyne: Working Title</title>
+    <link rel="stylesheet" href="/docs/css/articles.css">
+    <link rel="icon" type="image/png" href="/images/d20.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Astralyne: Animalkin">
+    <meta property="og:description" content="The Animalkin species for Astralyne.">
+    <meta name="theme-color" content="#923636">
+  
+    <link type="application/json+oembed" href="embed.json">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <aside id="sidebar">
+        <div class="sidebar-header">
+        <h2>Astralyne</h2>
+        <p>Use this handy Navigation bar to explore!</p>
+    </div>
+
+     <div class="sidebar">
+      <nav class="sidebar-nav"> 
+      <a href="/docs/" class="active"><span class="icon">🏠</span>Home</a>
+      </nav>   
+      
+      </div>
+
+    <div class="sidebar">
+        <div class="sidebar-section-label">Player's Handbook</div>
+        <nav class="sidebar-nav">
+      <a href="/docs/astralyne/classes.html"><span class="icon">⚔️</span> Classes &amp; Subclasses</a>
+      <a href="/docs/astralyne/species.html"><span class="icon">🧬</span> Playable Species</a>
+      <a href="/docs/astralyne/spells.html"><span class="icon">🔮</span> Spell Lists</a>
+        </nav>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar-section-label">The World of Astralyne</div>
+        <nav class="sidebar-nav">
+      <a href="/docs/astralyne/lorehistory.html"><span class="icon">📖</span>World History</a>
+      <a href="/docs/astralyne/factions.html"><span class="icon">👥</span>Factions</a>
+      <a href="/docs/astralyne/worldmap.html"><span class="icon">🗺️</span>World Map</a>
+        </nav>
+    </div>
+
+    <div class="sidebar-footer">
+        <p>Created by Kuraio <a href="">Links to stuff soon lmao</a></p>
+    </div>
+    </aside>
+
+
+<header id="topbar">
+  <button id="menu-btn" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="topbar-title">Astral<span>yne</span></div>
+</header>
+
+
+<main id="main">
+
+  <div class="wikimain">
+    <h1>Animalkin</h1>
+    <span class="submain">Version 1.0</span>
+  </div>
+
+  <div class="wiki-section">
+
+    <p>
+     Found on land, in the air, or at sea, the Animalkin are a highly diverse species of anthropomorphic animals born from the
+     god of nature. A broad term for a wide variety of different sub-species, the Animalkin are a species that 
+     can be found in almost every corner of the world. Despite their differences, their shared creation by the 
+     same god and their shared connection to nature has led to a strong sense of kinship among the different 
+     Animalkin sub-species, leading them to refer to themselves as "kin" and to each other as "kinsfolk".
+    </p>
+
+    </div>
+</main>
+
+<script>
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('overlay');
+  const menuBtn = document.getElementById('menu-btn');
+
+  function openSidebar() {
+    sidebar.classList.add('open');
+    overlay.classList.add('active');
+    menuBtn.classList.add('open');
+  }
+  function closeSidebar() {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('active');
+    menuBtn.classList.remove('open');
+  }
+
+  menuBtn.addEventListener('click', () => {
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+  overlay.addEventListener('click', closeSidebar);
+
+  document.querySelectorAll('.sidebar-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth < 900) closeSidebar();
+      document.querySelectorAll('.sidebar-nav a').forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
